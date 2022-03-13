@@ -16,6 +16,7 @@ function App() {
             style={{
                 backgroundImage: `url(${bgroundStyle})`,
                 backgroundSize: "cover",
+                
             }}
         >
             <h1>Weather App</h1>
