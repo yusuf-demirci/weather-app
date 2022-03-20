@@ -1,6 +1,32 @@
-# Getting Started with Create React App
+# Weather App
 
-- Live Site URL: https://yusufdemirci-weather-app.netlify.app/
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the component depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Search for cities to learn weather conditions
+- See weather information for the next 6 days
+
+### Screenshot
+
+![./screenshot.png](./src/img/screenshot.png)
+
+### Links
+
+Live Site URL:  https://yusufdemirci-weather-app.netlify.app/
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- React.js
+- React Bootstrap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
