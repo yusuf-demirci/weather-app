@@ -6,7 +6,7 @@ function Warning() {
   const { alertMessage } = useContext(WeatherContext);
 
   return (
-      <p className="alert-danger w-25 mx-auto px-5">{alertMessage }</p>
+      <p className="alert-danger w-25 mx-auto px-5">{alertMessage}</p>
   );
 }
 

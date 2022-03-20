@@ -16,21 +16,8 @@ export const WeatherProvider = ({ children }) => {
     const [bgroundStyle, setBgroundStyle] = useState(Sunny);
     const [bgStyleWeekly, setBgStyleWeekly] = useState(Array(6).fill(Sunny));
     const [alertMessage, setAlertMessage] = useState("");
-
-    // create default card
-    async function defaultCard() {
-        const response = await fetch(
-            `${WEATHER_APP_URL}/data/2.5/find?q=istanbul&units=metric&appid=${WEATHER_API_KEY}`
-        );
-        let data = await response.json();
-        data = data.list[0];
-
-        createWeatherCard(data);
-    }
-
-    useEffect(() => {
-        defaultCard();
-    }, []);
+    const [loaded, setLoaded] = useState(false)
+    
 
     // get today's weather info from API
     const getWeatherInfo = async () => {
@@ -54,6 +41,7 @@ export const WeatherProvider = ({ children }) => {
                 }, 3000);
             }
             setUserCity("");
+            setLoaded(true)
         }
     };
 
@@ -164,6 +152,7 @@ export const WeatherProvider = ({ children }) => {
                 bgroundStyle,
                 bgStyleWeekly,
                 alertMessage,
+                loaded,
                 setUserCity,
                 handleCityChange,
                 getWeatherInfo,

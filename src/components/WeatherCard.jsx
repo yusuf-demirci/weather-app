@@ -17,7 +17,7 @@ function WeatherCard() {
     return (
         <Card
             className="mx-auto px-2 text-start border-5 shadow-lg"
-            style={{ width: "20rem", backgroundImage: `url(${bgroundStyle})` }}
+            style={{ width: "17rem", backgroundImage: `url(${bgroundStyle})` }}
         >
             <Card.Body>
                 <Card.Title className="fs-3">

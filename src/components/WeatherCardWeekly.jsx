@@ -22,7 +22,7 @@ function WeatherCardWeekly({ id }) {
             className="mx-auto px-1 text-start border-5 shadow-lg mb-3"
             style={{
                 width: "12.3rem",
-                backgroundImage: `url(${bgStyleWeekly[id - 1]})`,
+                backgroundImage: `url(${bgStyleWeekly[id - 1]})`
             }}
         >
             <Card.Body>

@@ -26,12 +26,12 @@ function WeatherIcon(props) {
         case "rain":
         case "light rain":
         case "moderate rain":
-        case "heavy intensity rain":
             weatherIcon = faCloudSunRain;
             break;
         case "shower rain":
         case "thunderstorm":
         case "rain and snow":
+        case "heavy intensity rain":
             weatherIcon = faCloudShowersHeavy;
             break;
         case "snow":
